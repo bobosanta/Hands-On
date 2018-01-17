@@ -6,7 +6,6 @@ $(document).ready(function () {
         $(".options").slideToggle("slow", function () {
             $(this).toggleClass('expand').css('display', '');
 
-
             var output = document.getElementById('output');
             var userChoice = prompt('Head 1 or Tail 0 ?');
             var computerChoice = Math.floor(Math.random() * 2);
@@ -23,9 +22,8 @@ $(document).ready(function () {
         });
     });
 
-
     // Guess what computer chose
-
+    
     $("#guess").on("click", function () {
         $(".options").slideToggle("slow", function () {
             $(this).toggleClass('expand').css('display', '');
