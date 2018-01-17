@@ -1,0 +1,50 @@
+h1, h3 {
+    color: white;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f1c40f;
+}
+
+header > h1 {
+    padding-top: 100px;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+button {
+    font-family: 'Oswald', sans-serif;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color:#9b59b6;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button:active {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: #824b97;
+}
+
+button:active {
+    border: none;
+}
+
+#output {
+    text-align: center;
+    padding-top: 100px; 
+}
+
+.options {
+    padding-top: 50px;
+}
