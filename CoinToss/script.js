@@ -4,6 +4,8 @@ $(document).ready(function () {
 
     $("#vs").on("click", function () {
         $(".options").slideToggle("slow", function () {
+            $(this).toggleClass('expand').css('display', '');
+
 
             var output = document.getElementById('output');
             var userChoice = prompt('Head 1 or Tail 0 ?');
@@ -26,6 +28,7 @@ $(document).ready(function () {
 
     $("#guess").on("click", function () {
         $(".options").slideToggle("slow", function () {
+            $(this).toggleClass('expand').css('display', '');
 
             var output = document.getElementById('output');
             var userChoice = prompt('Heads or tails ?');
