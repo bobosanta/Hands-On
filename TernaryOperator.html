@@ -1,0 +1,44 @@
+<html>
+ 
+<head>
+    <title></title>
+</head>
+ 
+<body>
+    <div id="output">
+        Ternary Operator
+    </div>
+
+
+<script>
+
+    // Check for user in array with conditions
+
+    // var userArr = ['Mircea', 'Bob', 'Bogdan', 'Marley'];
+    // var user = prompt("What's you name");
+    // var finder = userArr.indexOf(user);
+    // var output = document.getElementById('output');
+    // if (finder  > -1) {
+    //     output.innerHTML = "Welcome back " + user;
+    // } else {
+    //     output.innerHTML = "User not found";
+    // };
+
+    var myTime = document.lastModified;
+    var output = document.getElementById('output');
+    
+    if (myTime < 12) {
+        output.innerHTML = "Morning";
+    } else if (myTime > 12 && myTime < 13) {
+        output.innerHTML = "Lunch time";
+    } else {
+        output.innerHTML = "It's evening";
+    };
+    
+
+
+
+</script>
+</body>
+ 
+</html>

@@ -1,0 +1,54 @@
+<html>
+ 
+<head>
+    <title></title>
+</head>
+ 
+<body>
+    <div id="output">
+        
+    </div>
+
+
+<script>
+
+    // Play against computer
+    // var output = document.getElementById('output');
+    // var userChoice = prompt('Head 1 or Tail 1 ?');
+    // var computerChoice = Math.floor(Math.random()*2);
+
+    // if (userChoice < computerChoice) {
+    //     output.innerHTML = computerChoice;
+    //     output.innerHTML = "You lose !";
+    // } else if (userChoice == computerChoice) {
+    //     output.innerHTML = "Tie !"
+    // } else {
+    //     output.innerHTML = "You win !"
+    // }
+
+    // Guess what computer chose
+    var output = document.getElementById('output');
+    var userChoice = prompt('Heads or tails ?');
+    var computerChoice = Math.floor(Math.random()*2);
+    console.log(computerChoice);
+
+    function result() {
+        if (userChoice == 'heads') {
+            userChoice = 1;
+        } else {
+            userChoice = 0;
+        }
+    };
+
+    result();
+
+    if(userChoice == computerChoice) {
+        output.innerHTML = "You were right !";
+    } else {
+        output.innerHTML = "You were wrong !";
+    }
+
+</script>
+</body>
+ 
+</html>
